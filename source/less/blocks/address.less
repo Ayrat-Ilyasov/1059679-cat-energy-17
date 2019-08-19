@@ -26,7 +26,7 @@
   text-align: left;
 }
 
-.address__map-image {
+.address__map {
   display: block;
   width: 320px;
   height: 400px;
@@ -37,8 +37,8 @@
   background-repeat: no-repeat;
   background-size: 320px 400px;
 }
-
-.addess__map-pin {
+.address__map::after {
+  content: "";
   width: 55px;
   height: 53px;
   margin-left: 136px;
@@ -48,3 +48,14 @@
   background-repeat: no-repeat;
   background-size: 55px 53px;
 }
+
+// .addess__map-pin {
+//   width: 55px;
+//   height: 53px;
+//   margin-left: 136px;
+//   margin-top: 0;
+//   background-image: url("../img/map-pin.png");
+//   background-position: left;
+//   background-repeat: no-repeat;
+//   background-size: 55px 53px;
+// }
