@@ -1,5 +1,23 @@
 .gift {
   background-color: #68b738;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    margin-top: 69px;
+    width: 708px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift {
+    width: 1440px;
+  }
 }
 
 .gift__text {
@@ -8,4 +26,26 @@
   font-size: 16px;
   line-height: 20px;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .gift__text {
+    width: 165px;
+    height: 56px;
+    position: absolute;
+    top: 60px;
+    left: 424px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift__text {
+    width: 1440px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .gift__image {
+    display: none;
+  }
 }

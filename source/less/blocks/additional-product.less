@@ -1,9 +1,66 @@
+@media (min-width: @tablet-width) {
+  .additional-product {
+    width: 768px;
+    border-top: 3px #68b738 solid;
+    margin-top: 88px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-product {
+    width: 1440px;
+  }
+}
+
 .additional-product__headline {
   font-family: "Oswald", "Arial", sans-serif;
   color: #111111;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-product__headline {
+    width: 410px;
+    height: 38px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    margin-left: 67px;
+    margin-top: -24px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-product__headline {
+    width: 1440px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .additional-product__element {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px #cdcdcd solid;
+    width: auto;
+    min-height: 94px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-product__element {
+    width: 1440px;
+  }
 }
 
 .additional-product__name {
@@ -15,10 +72,43 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @tablet-width) {
+  .additional-product__name {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-product__name {
+    width: 1440px;
+  }
+}
+
 .additional-product__property {
   font-family: "Arial", sans-serif;
   color: #444444;
   font-size: 14px;
   line-height: 14px;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-product__property {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 95px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-product__property {
+    width: 1440px;
+  }
+}
+
+.additional-product__button {
+  width: 633px;
+  height: 40px;
 }

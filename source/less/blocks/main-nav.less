@@ -1,6 +1,5 @@
 .main-nav {
   font-family: "Oswald", "Arial", sans-serif;
-  background-color: #ffffff;
   font-size: 20px;
   color: #111111;
   line-height: 20px;
@@ -11,18 +10,23 @@
   margin-right: auto;
 }
 
-.main-nav__toggle {
-  font-size: 0;
-  width: 63px;
-  height: 65px;
-  background-color: #ffffff;
-  border: none;
-  // url(../source/img/icon-mobile-menu.svg) no-repeat;
-  // background-size: 25px 19px;
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 768px;
+  }
 }
 
-.main-nav__image-wrapper {
-  width: 25px;
-  height: 19px;
-  background-color: #ffffff;
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 1440px;
+  }
+}
+
+.main-nav__wrapper {
+  height: 100%;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
 }

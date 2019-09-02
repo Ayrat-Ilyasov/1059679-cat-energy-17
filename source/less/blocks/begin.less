@@ -4,13 +4,35 @@
   background-color: #ffffff;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   width: 320px;
+  min-height: 440px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 22px;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .begin {
+    width: 420px;
+    margin-left: 120px;
+    margin-right: 228px;
+    background-image: none;
+    min-height: 790px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .begin {
+    width: auto;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 720px 696px;
+    margin-right: 0;
+  }
 }
 
 .begin__headline {
@@ -20,6 +42,24 @@
   line-height: 36px;
   text-align: center;
   padding-top: 29px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .begin__headline {
+    color: #111111;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .begin__headline {
+    color: #111111;
+    width: 420px;
+  }
 }
 
 .begin__tagline {
@@ -31,10 +71,46 @@
   text-transform: uppercase;
 }
 
-.begin__can {
+@media (min-width: @tablet-width) {
+  .begin__tagline {
+    color: #111111;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 33px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .begin__tagline {
+    color: #111111;
+  }
+}
+
+.begin__foto {
   padding: 0;
   margin: 0;
   margin-top: 29px;
+  align-self: center;
+  position: absolute;
+  bottom: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .begin__foto {
+    width: 709px;
+    height: 609px;
+    bottom: -50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .begin__foto {
+    width: 552px;
+    height: 499px;
+    bottom: 300px;
+    left: 500px;
+  }
 }
 
 .begin__button {
@@ -50,4 +126,21 @@
   border: none;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .begin__button {
+    margin-top: 48px;
+    margin-bottom: auto;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .begin__button {
+    color: #111111;
+  }
 }
