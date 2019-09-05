@@ -8,10 +8,12 @@
 
 @media (min-width: @tablet-width) {
   .features {
-    width: 768px;
+    width: 708px;
+    padding: 0 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -35,8 +37,8 @@
   .features__header {
     font-size: 60px;
     font-weight: normal;
-    margin-left: 33px;
     width: 100%;
+    margin-bottom: 8px;
   }
 }
 
@@ -52,11 +54,11 @@
 
 @media (min-width: @tablet-width) {
   .features__text-wrapper {
-    width: 236px;
+    width: 326px;
     height: 230px;
-    margin-left: 30px;
-    margin-top: 63px;
+    margin-top: 67px;
     margin-bottom: 20px;
+    flex-direction: column;
   }
 }
 
@@ -68,7 +70,7 @@
   line-height: 18px;
   text-align: left;
   width: 200px;
-  margin-top: 0;
+  margin-top: 37px;
   z-index: 1;
 }
 
@@ -125,15 +127,16 @@
 
 @media (min-width: @tablet-width) {
   .features__number {
+    display: inherit;
     width: 140px;
     height: 281px;
     font-size: 281px;
     line-height: 281px;
-    text-align: right;
+    text-align: left;
     margin-right: 0;
     margin-left: auto;
     position: absolute;
-    right: 0;
+    left: 124px;
     top: -32px;
   }
 }
