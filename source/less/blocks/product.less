@@ -1,3 +1,22 @@
+.product__wrapper{
+
+}
+
+@media (min-width: @tablet-width) {
+  .product__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__wrapper {
+
+  }
+}
+
 .product {
   background-color: #ffffff;
 }
@@ -7,8 +26,6 @@
     background-color: #f2f2f2;
     width: 324px;
     min-height: 431px;
-    margin-left: 30px;
-    margin-right: 30px;
     margin-top: 156px;
     text-align: center;
   }
@@ -21,6 +38,18 @@
     margin-left: 0;
     margin-right: 0;
 
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product__image{
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__image{
+    display: none;
   }
 }
 
