@@ -19,7 +19,9 @@
 
 @media (min-width: @desktop-width) {
   .features {
-    width: 1440px;
+    width: 1220px;
+    padding: 0 110px;
+    margin-bottom: 57px;
   }
 }
 
@@ -39,6 +41,13 @@
     font-weight: normal;
     width: 100%;
     margin-bottom: 8px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__header {
+    margin-top: 45px;
+    margin-bottom: 0px;
   }
 }
 
@@ -62,6 +71,16 @@
   }
 }
 
+
+@media (min-width: @desktop-width) {
+  .features__text-wrapper {
+    width: 255px;
+    min-height: 230px;
+    margin-top: 67px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+}
 
 .features__text {
   font-family: "Arial", sans-serif;

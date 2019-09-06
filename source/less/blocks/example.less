@@ -9,13 +9,15 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    width: 768px;
+    width: 708px;
+    padding: 0 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
-    width: 1440px;
+    width: 1220px;
+    padding: 0 110px;
   }
 }
 
@@ -36,6 +38,16 @@
     line-height: 60px;
     font-weight: normal;
     margin-left: 30px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .example__header {
+    width: 1330px;
+    margin-left: -110px;
+    margin-top: 0;
+    padding-left: 110px;
+    padding-bottom: 66px;
+    background-color: #ffffff;
   }
 }
 

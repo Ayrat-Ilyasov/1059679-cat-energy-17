@@ -7,27 +7,40 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи">
-      </a>
+        <div class="page-header__logo-wrapper">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи">
+            </a>
+            <button class="page-header__toggle" type="button">Открыть меню
+              <div class="page-header__image-wrapper">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
+                  <rect y="16" width="24" height="2"/>
+                  <rect y="8" width="24" height="2"/>
+                  <rect width="24" height="2"/>
+                </svg>
+              </div>
+            </button>
+          </div>
+
       <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
         </div>
-        </nav>
+      </nav>
     </header>
+
     <main class="page-main">
       <h1 class="page-main__headline">Каталог продукции</h1>
 

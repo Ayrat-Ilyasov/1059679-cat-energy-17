@@ -25,31 +25,40 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
+    font-size: 20px;
+    color: #ffffff;
+
     margin-top: auto;
     margin-bottom: auto;
   }
 }
 
+
+
 .site-list__item {
   min-height: 65px;
-  // display: block;
 }
 
 @media (min-width: @tablet-width) {
   .site-list__item {
     min-height: 20px;
-    // display: inline;
   }
 }
 
 @media (min-width: @desktop-width) {
   .site-list__item {
     min-height: 40px;
+    z-index: 1;
   }
 }
 
 .site-list__link {
   text-decoration: none;
-  color: #111111;
+  color: #000000;
   height: 100%;
+}
+@media (min-width: @desktop-width) {
+  .site-list__link--white{
+    color: #ffffff;
+  }
 }
