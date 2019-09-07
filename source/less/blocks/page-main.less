@@ -1,6 +1,7 @@
 .page-main {
   background-color: #ffffff;
-  width: 320px;
+  width: 280px;
+  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -32,6 +33,8 @@
   font-weight: normal;
   line-height: 60px;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -44,6 +47,31 @@
 
 @media (min-width: @desktop-width) {
   .page-main__headline {
+    width: 100%;
+  }
+}
+
+.page-main__headline--catalog {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__headline--catalog {
+    font-size: 60px;
+    margin-top: 29px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__headline--catalog {
     width: 100%;
   }
 }

@@ -1,6 +1,6 @@
 .example {
   width: 280px;
-  padding: 0 20px;
+  padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -42,10 +42,11 @@
     font-weight: normal;
   }
 }
+
 @media (min-width: @desktop-width) {
   .example__header {
-    width: 1330px;
-    margin-left: -110px;
+    width: auto;
+    margin-left: -80px;
     margin-top: 0;
     padding-left: 110px;
     padding-bottom: 66px;
@@ -154,7 +155,7 @@
   }
 }
 
-.example__demonstration{
+.example__demonstration {
   background-color: #f2f2f2;
 }
 
@@ -167,27 +168,27 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .example__demonstration {
+// @media (min-width: @desktop-width) {
+//   .example__demonstration {
 
-  }
-}
+//   }
+// }
 
 .example__image {
   background-color: #f2f2f2;
 }
 
-@media (min-width: @tablet-width) {
-  .example__image {
+// @media (min-width: @tablet-width) {
+//   .example__image {
 
-  }
-}
+//   }
+// }
 
-@media (min-width: @desktop-width) {
-  .example__image {
+// @media (min-width: @desktop-width) {
+//   .example__image {
 
-  }
-}
+//   }
+// }
 
 @media (min-width: @desktop-width) {
   .example__cost {
